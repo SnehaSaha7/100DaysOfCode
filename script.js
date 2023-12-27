@@ -62,7 +62,8 @@ function closePopup() {
   popup.style.display = "none";
 }
 
-// Call the function to create day buttons when the page loads
 window.onload = createDayButtons;
 
-const dayContents = ["<b>Day 1:</b> Lorem ipsum dolor sit amet 1."];
+const dayContents = [
+    "<b>Day 1:</b> Lorem ipsum dolor sit amet 1.",
+];
