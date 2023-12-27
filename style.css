@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree&family=Rubik+Doodle+Shadow&display=swap");
+
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  background: url("bg.svg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  background-color: #4c4caf;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  overflow-y: auto;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.week-divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 2px solid #a5a5a59a;
+}
+
+.day-button {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.weeks-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.week-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.week-label {
+  font-size: 80px;
+  font-family: fantasy;
+  color: #c3c3c3cf;
+  text-align: center;
+}
+.days-container {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+}
