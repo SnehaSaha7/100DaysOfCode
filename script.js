@@ -1,3 +1,27 @@
+
+// Assuming 'tasks.md' is in the same directory as your HTML file
+const tasksFile = 'tasks.md';
+
+// Function to fetch the content of the tasks file
+async function fetchTasks() {
+    try {
+        const response = await fetch(tasksFile);
+        const content = await response.text();
+        return content.split('\n').filter(Boolean);
+    } catch (error) {
+        console.error('Error fetching tasks:', error);
+        return [];
+    }
+}
+let dayContents = [];
+
+fetchTasks().then(tasks => {
+  dayContents = tasks;
+});
+
+
+
+
 function createDayButtons() {
   const container = document.querySelector(".container");
 
@@ -64,6 +88,6 @@ function closePopup() {
 
 window.onload = createDayButtons;
 
-const dayContents = [
-    "<b>Day 1:</b> Lorem ipsum dolor sit amet 1.",
-];
+// const dayContents = [
+//     "<b>Day 1:</b> Lorem ipsum dolor sit amet 1.",
+// ];
