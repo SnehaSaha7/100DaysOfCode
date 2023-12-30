@@ -75,7 +75,7 @@ function showDay(day) {
   if (day >= 1 && day <= dayContents.length) {
     const dayContent = dayContents[day - 1];
     popupContent.innerHTML = dayContent;
-    popup.style.display = "block";
+    popup.style.display = "flex";
   } else {
     alert("Invalid day selection");
   }
