@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree&family=Rubik+Doodle+Shadow&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
   font-family: "Figtree", sans-serif;
@@ -91,8 +92,8 @@ body {
 
 .week-label {
   font-size: 80px;
-  font-family: fantasy;
-  color: #c3c3c3cf;
+  font-family: 'Bebas Neue', sans-serif;
+    color: #c3c3c3cf;
   text-align: center;
 }
 .days-container {
